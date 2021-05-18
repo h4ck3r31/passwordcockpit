@@ -31,6 +31,10 @@ services:
             PASSWORDCOCKPIT_AUTHENTICATION_TYPE: password
             PASSWORDCOCKPIT_SWAGGER: enable
             PASSWORDCOCKPIT_SSL: enable
+
+            # Enable if between your reverse proxy and this app, PASSWORDCOCKPIT_SSL is disabled
+            PASSWORDCOCKPIT_REV_PROXY_WITHOUT_SSL: disable
+            
             #PASSWORDCOCKPIT_ADMIN_PASSWORD: Password123!
             #APACHE_RUN_USER: 1000
             #APACHE_RUN_GROUP: 1000
